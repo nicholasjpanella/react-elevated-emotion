@@ -1,0 +1,21 @@
+{
+  "version": "independent",
+  "command": {
+    "version": {
+      "allowBranch": "main",
+      "conventionalCommits": true
+    },
+    "publish": {
+      "allowBranch": "main",
+      "npmClient": "npm",
+      "conventionalCommits": true,
+      "message": "chore(release): publish [skip ci]",
+      "ignoreChanges": [
+        "**/__tests__/**",
+        "**/*.story.tsx",
+        "**/*.md",
+        "**/*.sh"
+      ]
+    }
+  }
+}

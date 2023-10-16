@@ -1,0 +1,41 @@
+{
+  "name": "react-elevated-emotion",
+  "version": "0.0.0",
+  "workspaces": [
+    "."
+  ],
+  "description": "A supercharged @emotion/styled wrapper for react",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "publish-main": "lerna publish --yes"
+  },
+  "license": "LICENSE",
+  "author": "Nicholas Panella",
+  "homepage": "https://github.com/nicholasjpanella/react-elevated-emotion#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholasjpanella/react-elevated-emotion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicholasjpanella/react-elevated-emotion/issues"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
+    "@vitejs/plugin-react": "^4.1.0",
+    "jest": "^29.7.0",
+    "lerna": "^7.3.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.10"
+  }
+}
