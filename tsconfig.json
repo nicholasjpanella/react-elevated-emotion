@@ -5,7 +5,7 @@
       "target": "esnext",
       "module": "esnext",
       "jsx": "react-jsx",
-      "moduleResolution": "Node10",
+      "moduleResolution": "Node",
       "lib": ["dom", "dom.iterable", "esnext"],
       "noEmit": false,
       "skipLibCheck": true,
