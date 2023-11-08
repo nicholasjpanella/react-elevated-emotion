@@ -13,7 +13,7 @@ layout:
     visible: false
 ---
 
-# 🏠 React / Elevated Emotion
+# 👋 React / Elevated Emotion
 
 `react-elevated-emotion` is a supercharged wrapper around [`@emotion/styled`](https://emotion.sh/docs/introduction) components with the sole focus on Styled React Components.
 
