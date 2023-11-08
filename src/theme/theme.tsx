@@ -3,6 +3,7 @@ import { ThemeProvider } from "@emotion/react";
 import { PropsWithChildren, useEffect } from "react";
 
 import type { SuperThemeDefinition, SuperThemeScheme } from "./theme.types";
+export type * from "./theme.types";
 
 type Store = SuperThemeDefinition & {
   preferred?: boolean;

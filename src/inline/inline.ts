@@ -3,7 +3,7 @@ import get from "lodash.get";
 import update from "lodash.update";
 
 import { InlineStyleProps } from "./inline.types";
-export * from "./inline.types";
+export type * from "./inline.types";
 
 export const inlineStyleMap: Record<
   keyof InlineStyleProps,

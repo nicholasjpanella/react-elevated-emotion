@@ -1,23 +1,11 @@
-import baseStyled, { CreateStyledComponent } from "@emotion/styled";
-import {
-  AriaAttributes,
-  CSSProperties,
-  Fragment,
-  cloneElement,
-  forwardRef,
-} from "react";
+import baseStyled from "@emotion/styled";
+import { Fragment, cloneElement, forwardRef } from "react";
 import extendClassName from "classnames";
 
-import type {
-  SuperTags,
-  BaseProps,
-  SuperStyledConfig,
-  ThemeAs,
-} from "./supercharge.types";
-import { applyInlineStyles, sanitizeComponentProps } from "src/inline/inline";
-import { InlineStyleProps, AllowInlineStyles } from "src/inline/inline.types";
+import { applyInlineStyles, sanitizeComponentProps } from "../inline/inline";
 
-export * from "./supercharge.types";
+import type { SuperTags, SuperStyledConfig } from "./supercharge.types";
+export type * from "./supercharge.types";
 
 const defaultConfig: SuperStyledConfig = {
   ignore: [],
