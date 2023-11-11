@@ -6,8 +6,8 @@ import {
   FunctionComponent,
   AriaAttributes,
 } from "react";
-import { AllowInlineStyles } from "src/inline/inline.types";
-import { SuperThemeDefinition } from "src/theme/theme.types";
+import { AllowInlineStyles } from "../inline/inline.types";
+import { SuperThemeDefinition } from "../theme/theme.types";
 
 export type SuperStyledConfig = {
   /** custom prop exclusions from final DOM element */
