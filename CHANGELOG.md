@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.4 (2023-11-11)
+
+
+### Bug Fixes
+
+* types ([cdb58b2](https://github.com/nicholasjpanella/react-elevated-emotion/commit/cdb58b2164d214811a62e197350e229ebf3cf5d5))
+
+
+
+
+
 ## 0.2.3 (2023-11-11)
 
 **Note:** Version bump only for package react-elevated-emotion
