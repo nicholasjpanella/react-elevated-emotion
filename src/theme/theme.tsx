@@ -32,8 +32,8 @@ export const superThemeApi = {
   setDefaultScheme(scheme: SuperThemeScheme) {
     useSuperTheme.setState({ scheme, defaultScheme: scheme });
   },
-  setDefaultPallet(pallet: Omit<SuperThemeDefinition, "scheme">) {
-    useSuperTheme.setState({ ...pallet });
+  setDefaultPalette(palette: Omit<SuperThemeDefinition, "scheme">) {
+    useSuperTheme.setState({ ...palette });
   },
 };
 

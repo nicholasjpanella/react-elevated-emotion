@@ -7,7 +7,7 @@ import {
   AriaAttributes,
 } from "react";
 import { AllowInlineStyles } from "../inline/inline.types";
-import { SuperThemeDefinition } from "../theme/theme.types";
+import { SuperThemeDefinition, Variant } from "../theme/theme.types";
 
 export type SuperStyledConfig = {
   /** custom prop exclusions from final DOM element */
@@ -22,8 +22,29 @@ export type SuperStyledConfig = {
     | ((props) => React.AllHTMLAttributes<unknown>);
 };
 
+export const sizeList = [
+  "xxx-sm",
+  "xx-sm",
+  "x-sm",
+  "sm",
+  "md",
+  "lg",
+  "x-lg",
+  "xx-lg",
+  "xxx-lg",
+] as const;
+
 export type BaseProps = {
+  /**
+   * @name testid
+   * @description provide your testid function with a testid value
+   */
   testid?: string;
+  /**
+   * @name variant
+   * @description customize/override your themed color
+   */
+  variant?: Variant;
 };
 
 export type ThemeAs = {
