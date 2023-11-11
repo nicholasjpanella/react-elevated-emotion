@@ -9,7 +9,7 @@ import {
 import { AllowInlineStyles } from "../inline/inline.types";
 import { SuperThemeDefinition, Variant } from "../theme/theme.types";
 
-export type SuperStyledConfig = {
+export type SuperStyledConfig<T = unknown> = {
   /** custom prop exclusions from final DOM element */
   ignore?: string[];
 
@@ -18,8 +18,8 @@ export type SuperStyledConfig = {
 
   /** Default Props and wrapping capabilities */
   defaultProps?:
-    | React.AllHTMLAttributes<unknown>
-    | ((props) => React.AllHTMLAttributes<unknown>);
+    | React.AllHTMLAttributes<T>
+    | ((props) => React.AllHTMLAttributes<T>);
 };
 
 export const sizeList = [
@@ -76,7 +76,7 @@ export type SuperTags = {
     PROPS = unknown,
     OMIT extends string | number | symbol = ""
   >(
-    config: SuperStyledConfig
+    config: SuperStyledConfig<PROPS>
   ) => CreateStyledComponent<
     ThemeAs,
     Omit<Intrinsic[Tag], OMIT> &
