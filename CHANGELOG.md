@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.3 (2023-11-11)
+
+
+### Bug Fixes
+
+* make sx optional ([2a4f6c5](https://github.com/nicholasjpanella/react-elevated-emotion/commit/2a4f6c511b74af9979af4bdb42262b2e69038293))
+
+
+
+
+
 ## 0.1.2 (2023-11-11)
 
 
