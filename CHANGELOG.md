@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.2.0 (2023-11-11)
+
+
+### Features
+
+* add variant and size base props ([a60f34d](https://github.com/nicholasjpanella/react-elevated-emotion/commit/a60f34d506ed9f74eea40a608add20c24cb7b7f8))
+
+
+
+
+
 ## 0.1.3 (2023-11-11)
 
 
