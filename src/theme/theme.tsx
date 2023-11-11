@@ -2,7 +2,11 @@ import { create } from "zustand";
 import { ThemeProvider } from "@emotion/react";
 import { PropsWithChildren, useEffect } from "react";
 
-import type { SuperThemeDefinition, SuperThemeScheme } from "./theme.types";
+import type {
+  SuperThemeDefinition,
+  SuperThemePalette,
+  SuperThemeScheme,
+} from "./theme.types";
 export type * from "./theme.types";
 
 type Store = SuperThemeDefinition & {
@@ -32,7 +36,7 @@ export const superThemeApi = {
   setDefaultScheme(scheme: SuperThemeScheme) {
     useSuperTheme.setState({ scheme, defaultScheme: scheme });
   },
-  setDefaultPalette(palette: Omit<SuperThemeDefinition, "scheme">) {
+  setDefaultPalette(palette: SuperThemePalette) {
     useSuperTheme.setState({ ...palette });
   },
 };
