@@ -5,11 +5,12 @@ import {
   HTMLAttributes,
   FunctionComponent,
   AriaAttributes,
+  PropsWithChildren,
 } from "react";
 import { AllowInlineStyles } from "../inline/inline.types";
 import { SuperThemeDefinition, Variant } from "../theme/theme.types";
 
-export type SuperStyledConfig<T = unknown> = {
+export type SuperStyledConfig<T = {}> = {
   /** custom prop exclusions from final DOM element */
   ignore?: string[];
 
@@ -18,8 +19,10 @@ export type SuperStyledConfig<T = unknown> = {
 
   /** Default Props and wrapping capabilities */
   defaultProps?:
-    | React.AllHTMLAttributes<T>
-    | ((props) => React.AllHTMLAttributes<T>);
+    | (T & React.AllHTMLAttributes<unknown>)
+    | ((
+        props?: PropsWithChildren<T & React.AllHTMLAttributes<unknown>>
+      ) => PropsWithChildren<T & React.AllHTMLAttributes<unknown>>);
 };
 
 export const sizeList = [
@@ -66,15 +69,15 @@ interface Intrinsic extends JSX.IntrinsicElements {
 
 export type SuperComponent<
   TAG extends keyof Intrinsic,
-  PROPS = unknown
+  PROPS = {}
 > = FunctionComponent<
   Intrinsic[TAG] & AllowInlineStyles<PROPS> & BaseProps & AriaAttributes
 >;
 
 export type SuperTags = {
   [Tag in keyof Intrinsic]: <
-    PROPS = unknown,
-    OMIT extends string | number | symbol = ""
+    PROPS = {},
+    OMIT extends string | number | symbol = null
   >(
     config: SuperStyledConfig<PROPS>
   ) => CreateStyledComponent<
