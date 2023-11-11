@@ -34,6 +34,8 @@ export const sizeList = [
   "xxx-lg",
 ] as const;
 
+export type Size = (typeof sizeList)[number];
+
 export type BaseProps = {
   /**
    * @name testid
@@ -45,6 +47,11 @@ export type BaseProps = {
    * @description customize/override your themed color
    */
   variant?: Variant;
+  /**
+   * @name size
+   * @description customize/override your component's size
+   */
+  size?: Size;
 };
 
 export type ThemeAs = {
