@@ -33,6 +33,7 @@
     "zustand": "4.4.6"
   },
   "peerDependencies": {
+    "@emotion/styled": ">=11.0.0",
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
   },
