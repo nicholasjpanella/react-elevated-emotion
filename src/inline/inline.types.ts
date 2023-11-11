@@ -56,5 +56,5 @@ export type AllowInlineStyles<T> = T &
      * @description special extras, allows to embed and collect both
      * inline keys and react style keys to their values
      */
-    sx: AllowInlineStyles<React.CSSProperties>;
+    sx?: AllowInlineStyles<React.CSSProperties>;
   };
