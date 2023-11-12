@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.5 (2023-11-12)
+
+
+### Bug Fixes
+
+* flex ignore props ([cc8067a](https://github.com/nicholasjpanella/react-elevated-emotion/commit/cc8067a0e89948e0a84856cd2ee2e28fcbee68fb))
+
+
+
+
+
 ## 0.2.4 (2023-11-11)
 
 
