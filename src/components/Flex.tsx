@@ -12,6 +12,7 @@ export type FlexProps = {
 
 export const Flex = tags.div<FlexProps>({
   testid: ({ testid = null }) => `flex${testid ? "-".concat(testid) : ""}`,
+  ignore: ["inline", "column", "reverse", "fill"],
 })(({ inline = false, column = false, reverse = false, fill = false }) => ({
   label: "flex",
   display: inline ? "inline-flex" : "flex",
