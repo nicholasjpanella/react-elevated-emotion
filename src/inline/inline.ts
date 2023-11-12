@@ -13,7 +13,7 @@ export const inlineStyleMap: Record<
   h: ["height"],
   minW: ["minWidth"],
   minH: ["minHeight"],
-  maxW: ["maxHeight"],
+  maxW: ["maxWidth"],
   maxH: ["maxHeight"],
   m: ["margin"],
   mt: ["marginTop"],
