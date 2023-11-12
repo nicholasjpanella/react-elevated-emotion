@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.7 (2023-11-12)
+
+
+### Bug Fixes
+
+* maxW ([ff6fa88](https://github.com/nicholasjpanella/react-elevated-emotion/commit/ff6fa8803428a1f83622394ce6999fca6a0e01b6))
+
+
+
+
+
 ## 0.2.6 (2023-11-12)
 
 **Note:** Version bump only for package react-elevated-emotion
