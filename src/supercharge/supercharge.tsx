@@ -8,7 +8,7 @@ import type { SuperTags, SuperStyledConfig } from "./supercharge.types";
 export type * from "./supercharge.types";
 
 const defaultConfig: SuperStyledConfig = {
-  ignore: [],
+  ignore: ["variant", "size"],
   testid: null,
   defaultProps: {},
 };
