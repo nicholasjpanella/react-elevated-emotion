@@ -71,7 +71,8 @@ export function sanitizeComponentProps(
 }
 
 export function applyInlineStyles(componentProps: any, debug = false) {
-  debug && console.debug({ componentProps });
+  debug = debug || !!componentProps.debug;
+  debug && console.debug(componentProps.debug, { componentProps });
 
   const appliedStyles = {};
 
@@ -105,7 +106,7 @@ export function applyInlineStyles(componentProps: any, debug = false) {
   };
 
   const shortHandStyles = sanitizeProps(componentProps);
-  debug && console.debug({ shortHandStyles });
+  debug && console.debug(componentProps.debug, { shortHandStyles });
 
   for (const [key, value] of Object.entries(shortHandStyles)) {
     if (value === null) continue;
@@ -120,5 +121,6 @@ export function applyInlineStyles(componentProps: any, debug = false) {
     }
   }
 
+  debug && console.debug(componentProps.debug, { appliedStyles });
   return appliedStyles;
 }
