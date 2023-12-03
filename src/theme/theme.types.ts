@@ -21,6 +21,8 @@ export const variantList = [
   "secondaryInvert",
   "secondaryHover",
   "secondaryDisable",
+  "transparent",
+  "inherit",
 ] as const;
 
 export type Variant = (typeof variantList)[number];
