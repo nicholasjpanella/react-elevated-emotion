@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.10 (2023-12-03)
+
+
+### Bug Fixes
+
+* add variants ([08b5c09](https://github.com/nicholasjpanella/react-elevated-emotion/commit/08b5c09c552408236460a3f2d4b0663572590955))
+
+
+
+
+
 ## 0.2.9 (2023-12-03)
 
 
