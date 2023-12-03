@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.11 (2023-12-03)
+
+
+### Bug Fixes
+
+* add keyframes ([1d79c6f](https://github.com/nicholasjpanella/react-elevated-emotion/commit/1d79c6f93cbc6ad976c5f669e1512eaa7122e4bc))
+
+
+
+
+
 ## 0.2.10 (2023-12-03)
 
 
